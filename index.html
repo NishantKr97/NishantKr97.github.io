@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>TITLE</title>
+	<title>Air Force</title>
 	<link rel="stylesheet" type="text/css" href="assignment1.css" src="//normalize-css.googlecode.com/svn/trunk/normalize.css">
+  
 	<script type="text/javascript" href="assignment1.js"></script>
 	<link rel="icon" type="img/ico" href="img.ico">
 </head>
@@ -11,23 +12,26 @@
   <div class="mainBody img-responsive">
     <h1 class="col-12 TITLE img-responsive"> FIGHTER JETS </h1>
     <div class="row img-responsive">
- 	   <h2 class="col-4 Menu img-responsive" onclick="airforce()" onmouseover="this.style.background="gray";"onmouseout="this.style.background="blue";"> INDIAN AIR FORCE </h2>
+ 	   <h2 class="col-4 Menu img-responsive" id="menu1" onclick="airforce1() ;airforce(this)" onmouseover="this.style.background="gray";"onmouseout="this.style.background="blue";"> INDIAN AIR FORCE </h2>
  	   <div style="width: 1px"></div>
- 	   <h2 class="col-4 Menu img-responsive" onmouseover="submenu1()"> U.S AIR FORCE</h2>
+ 	   <h2 class="col-4 Menu img-responsive"  id="menu2" onmouseover="submenu1()" onclick="airforce(this)"> U.S AIR FORCE</h2>
  	   <div style="width: 1px"></div>
-       <h2 class="col-4 Menu3 img-responsive" id="Royal" onmouseover="submenu()"> ROYAL AIR FORCE </h2>
+       <h2 class="col-4 Menu3 img-responsive btn btn-primary-toggle" type= "button" data-toggle="dropdown" id="menu3" onmouseover="submenu()" onclick="airforce(this)"  > ROYAL AIR FORCE </h2>
+        
+      
+       </div>
  	   </div>
     </div>
 
   <div class="row img-responsive" >
  	<div class="col-4 post ">
- 		<div class="post1 " onclick="image1Set()"> Sukhoi MK-30</div>
+ 		<div class="postmain " id="post1" onclick="image1Set() ;postMain(this)"> Sukhoi MK-30</div>
  		<div style="height: 1px;"></div>
- 		<div class="post2 " onclick="image2Set()"> Jaguar</div>
+ 		<div class="postmain " id= "post2" onclick="image2Set() ;postMain(this)"> Jaguar</div>
  		<div style="height: 1px;"></div>
- 		<div class="post3 " onclick="image3Set()"> Mirage-2000</div>
+ 		<div class="postmain " id= "post3" onclick="image3Set();postMain(this)"> Mirage-2000</div>
  		<div style="height: 1px;"></div>
- 		<div class="post4 " onclick="image4Set()"> MIG-21</div>
+ 		<div class="postmain " id="post4" onclick="image4Set();postMain(this)"> MIG-21</div>
  	</div>
  	<div class="col-8 post img-responsive">
  	    <div id="posthead" class="img-responsive">Indian Air Force</div>
@@ -64,7 +68,7 @@ home.addEventListener("click", function () {
     document.getElementById("Menu").style.background = "inherit";
     document.getElementById("Menu3").style.background = "inherit";
 });
-    function airforce() {
+    function airforce1() {
     	var imagea = document.getElementById("image");
     	imagea.src = "img.png";
 
@@ -72,6 +76,7 @@ home.addEventListener("click", function () {
 
     	document.getElementById("posthead").innerHTML = "Indian Air Force";
     }
+    
   	function image1Set() {
   		
   		
@@ -115,6 +120,21 @@ home.addEventListener("click", function () {
     }
      function submenu1() {
     	onmouseover("Menu").submenu().show();
+    }
+    function airforce(x) {
+      menu1.style.background = "#00E676";
+      menu2.style.background = "#00E676";
+      menu3.style.background = "#00E676";
+      x.style.background = "#69F0AE";
+
+    }
+    function postMain(y) {
+      
+      post1.style.background = "#FF3D00";
+      post2.style.background = "#FF3D00";
+      post3.style.background = "#FF3D00";
+      post4.style.background = "#FF3D00";
+      y.style.background = "#DD2C00";
     }
   </script>
 </body>
