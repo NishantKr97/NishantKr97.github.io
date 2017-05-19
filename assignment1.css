@@ -84,10 +84,12 @@
   background:#00E676;
   color: #ffffff;
   margin: 0px;
+  cursor: pointer;
  }
  .Menu:hover{
   background-color: #69F0AE;
  }
+ 
  .Menu3{
   text-align:center;
   height: 7.5vh;
@@ -104,48 +106,61 @@
   margin: 0px;
   padding: 10px;
  }
- .post1{
+ .postmain{
   height: 15vh;
   text-align: center;
   font-size: 28px;
   background: #FF3D00;
   color: #ffffff;
   padding-top: 12px;
+  cursor: pointer;
  }
- .post1:hover{
+ #post1{
+  height: 15vh;
+  text-align: center;
+  font-size: 28px;
+  background: #FF3D00;
+  color: #ffffff;
+  padding-top: 12px;
+  cursor: pointer;
+ }
+ #post1:hover{
   background-color: #DD2C00;
  }
-.post2{
+#post2{
   height: 15vh;
   text-align: center;
   font-size: 28px;
   background: #FF3D00;
   color: #ffffff;
   padding-top: 10px;
+  cursor: pointer;
  }
- .post2:hover{
+ #post2:hover{
   background-color: #DD2C00;
  }
-.post3{
+#post3{
   height: 15vh;
   text-align: center;
   font-size: 28px;
   background: #FF3D00;
   color: #ffffff;
   padding-top: 10px;
+  cursor: pointer;
  }
- .post3:hover{
+ #post3:hover{
   background-color: #DD2C00;
  }
- .post4{
+ #post4{
   height: 15vh;
   text-align: center;
   font-size: 28px;
   background: #FF3D00;
   color: #ffffff;
   padding-top: 10px;
+  cursor: pointer;
  }
- .post4:hover{
+ #post4:hover{
   background-color: #DD2C00;
  }
  #image{
@@ -190,5 +205,10 @@
   height: auto;
   
  }
-
-
+h2#menu3 div li {
+  display: none;
+}
+h2#menu3 div:hover li{
+  display: block;
+  position: relative;
+}
