@@ -77,6 +77,10 @@
   color: #ffffff;
   background: #01579B;
   padding-top: 10px;
+  
+  top :0px;
+  display: block;
+   
  }
  .Menu{
   text-align:center;
@@ -85,6 +89,8 @@
   color: #ffffff;
   margin: 0px;
   cursor: pointer;
+  
+  
  }
  .Menu:hover{
   background-color: #69F0AE;
@@ -97,6 +103,8 @@
   color: #ffffff;
   margin: 0px;
   cursor: pointer;
+ 
+    
  }
  .Menu3:hover{
   background-color: #69F0AE;
@@ -198,17 +206,16 @@
   background: #673AB7;
   font-size: 24px;
   color: white;
-  
+  position: fixed; 
+  display: inline-block;
+  bottom: 0px;
 }
 .img-responsive{
    width: 100%;
   height: auto;
   
  }
-h2#menu3 div li {
-  display: none;
-}
-h2#menu3 div:hover li{
-  display: block;
+*html #footer{
   position: relative;
+  top:10px;
 }
